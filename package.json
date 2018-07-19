@@ -1,0 +1,22 @@
+{
+  "name": "lesly-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass assets/sass/style.scss assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leslyp/lesly-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leslyp/lesly-portfolio/issues"
+  },
+  "homepage": "https://github.com/Leslyp/lesly-portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
