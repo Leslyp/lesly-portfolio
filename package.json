@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass assets/sass/style.scss assets/css/style.css"
+    "sass": "node-sass assets/sass/styles.scss assets/css/styles.css -w"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Leslyp/lesly-portfolio#readme",
   "devDependencies": {
     "node-sass": "^4.9.2"
+  },
+  "dependencies": {
+    "foundation-sites": "^6.5.0-rc.2"
   }
 }
