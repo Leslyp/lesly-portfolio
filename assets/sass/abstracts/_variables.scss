@@ -1,17 +1,16 @@
 // COLORS
-$color-primary: rgb(215, 232, 248);
-$color-primary-dark:rgb(189, 205, 219);
+$color-primary: #a8dc1f;
+$color-primary-dark:#92a470;;
 
-$color-secondary-light: #ffb900;
-$color-secondary-dark: #ff7730;
+$color-secondary: #ab300b;
+$color-secondary-dark: #5f1904;
 
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
 
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
+$color-grey-light:rgba(190, 199, 211, 0.911);
 
-$color-grey-dark: #777;
+$color-grey-dark: darken( rgba(190, 199, 211, 0.911), 50%);
 $color-grey-dark-2: #999;
 $color-grey-dark-3: #333;
 
@@ -22,7 +21,10 @@ $color-black: #000;
 // FONT
 $default-font-size: 1.6rem;
 $font-Josefin: 'Josefin Sans', sans-serif;
-
+$font-Fredericka: 'Fredericka the Great', cursive;
+$font-Londrina: 'Londrina Outline', cursive;
+$font-KiteOne: 'Kite One', sans-serif;
+$font-LondrinaShadow: 'Londrina Shadow', cursive;
 
 // GRID
 $grid-width: 114rem;

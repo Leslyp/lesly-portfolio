@@ -1,2 +1,145 @@
-.navigation {
-}
+.nav {
+    background-image: url(../img/wood.jpg);
+    background-size: cover;
+    background-position: top;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+
+    &--mobile { // get mobile nav to show
+        position: fixed;
+        
+        @media only screen and (max-width: 549px) { // hide menu icon on larger screens
+            z-index: 2;
+        }
+    }
+
+    .menu {
+        margin-top: 17px;
+        padding-left: 20px; 
+
+        @media only screen and (min-width: 550px) { // hide menu icon on larger screens
+            display: none;
+        }
+    }
+
+    .logo {
+        width: 60px;
+        height: 59px;
+        padding-top: 5px; 
+
+        @media only screen and (min-width: 550px) { // hide logo icon on larger screens
+            display: none;
+        }
+    }
+
+    .sidenav {
+        background-color: #111;
+        height: 100%;
+        left: 0;
+        overflow-x: hidden; // hides side nav content when it's not open
+        padding-top: 60px;
+        position: fixed;
+        top: 0;
+        transition: 0.5s;
+        width: 0;
+        z-index: 1;
+    
+        a {
+            color: #b7aeae;
+            display: block;
+            font-size: 30px;
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+    
+            &:hover {
+                color: #f1f1f1;
+            }
+        }
+    
+        .closebtn {
+            font-size: 45px;
+            margin-left: 50px;
+            position: absolute;
+            right: 25px;
+            top: 0;
+        }
+
+        .path {
+            stroke-dasharray:6000;
+            stroke-dashoffset: 6000;
+                      transition: 6s all;
+          }
+          
+          svg:hover .path {
+            stroke-dasharray:6000;
+            stroke-dashoffset: 0px;
+          }
+    } // side nav styles
+    
+    .showNav {
+        width: 100%;
+    
+        @media screen and (min-width: 1200px) { 
+            width: 25%;
+        }
+    } // nav when shown
+
+    &__list {
+        display: none;
+        justify-content: flex-start;
+        list-style-type: none;
+        margin: 0;
+        margin-top: 15px;
+        position: relative;
+
+        &-items a {
+            color: $color-white;
+            font-family: $font-Josefin;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 0 20px;
+        }
+
+        &-items a:hover {
+            color: $color-white;
+            opacity: .7;
+        }
+
+        &-items.active a  {
+            color: black;
+            position: relative;
+
+            &::after {
+                background-color: $color-primary;
+                border: 1px solid;
+                border-radius: 100px 0;
+                content: "";
+                display: block;
+                height: 5px;
+                left: 0;
+                position: absolute;
+                top: 24px;
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 550px) { // show nav list on larger screens
+            display: flex;
+        }
+    } // .nav__list
+
+    &::before { // create dark opacity div over nav
+        background-color: black;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 100%;
+        opacity: 0.15;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+} // .nav

@@ -22,14 +22,30 @@
     }
 }
 
-@keyframes moveInBottom {
+@keyframes moveInTop {
     0% {
         opacity: 0;
-        transform: translateY(3rem);
+        transform: translateY(-2rem);
     }
 
     100% {
         opacity: 1;
         transform: translate(0);
     }
+}
+
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    30%{    color: $color-secondary-dark; }
+    50%{    color: $color-secondary; }
+    80%{    color: $color-secondary; }
+    80%{    color: $color-secondary-dark;  }
+    100%{   color: #000;    }
+
+    // 0%{     color: #000;    }
+    // 30%{    color: $color-black; }
+    // 50%{    color: $color-primary-dark; }
+    // 80%{    color: $color-primary-dark; }
+    // 80%{    color: $color-black;  }
+    // 100%{   color: #000;    }
 }

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Kite+One|Londrina+Outline|Londrina+Shadow" rel="stylesheet">
         <link rel="stylesheet" href="./assets/css/styles.css">
         <!-- foundation-float.min.css: Compressed CSS with legacy Float Grid -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/css/foundation-float.min.css" integrity="sha256-SXzNzz68b8cy/1oRvdP128/5VlvegrZO5QDmBiqhlQc= sha384-5EVTk1nWllg1T/XoVEd82fhnOxUhRUOquz4AyO3+M0kbhUzhruouReQWPnihRxPs sha512-y0IHToRgzE99SfoteKLXR0MUOTRPMQHwc4nmU2/Uqhu4KulOzK18RbuicuhlgzPDdj23skwxTWUv7CJs+psXig==" crossorigin="anonymous">
@@ -12,82 +13,184 @@
         <title>Lesly Portfolio</title>
     </head>
     <body>
-        <header class="header" id="home">
-            <nav class="nav">
-                <!-- <div class="logo-box">
-                    <a href="home.html">
-                        <img src="http://via.placeholder.com/30x30" class="logo">
-                    </a>
-                </div> -->
+        <header class="header" id="top">
+                <!-- <nav class="nav top-nav">
+                        <ul class="nav__list" id="myNavList">
+                          <li class="nav__list-items"><a href="#home" class="nav__list-item">Home</a></li>
+                          <li class="nav__list-items"><a href="#about" class="nav__list-item">About</a></li>
+                          <li class="nav__list-items"><a href="#work" class="nav__list-item">Work</a></li>
+                          <li class="nav__list-items"><a href="#contact" class="nav__list-item">Contact</a></li>
+                        </ul>
+                    </nav> -->
 
-                <ul class="nav__list" id="myNavList">
-                    <li class="nav__list-items">
-                        <a href="#home" class="nav__list-item active">Home</a>
-                    </li>
-                    <li class="nav__list-items">
-                        <a href="#about" class="nav__list-item">About</a>
-                    </li>
-                    <li class="nav__list-items">
-                        <a href="#work" class="nav__list-item">Work</a>
-                    </li>
-                    <li class="nav__list-items">
-                        <a href="#contact" class="nav__list-item">Contact</a>
-                    </li>
-                </ul>
+            <!-- <nav class="nav top-nav">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="removeShowClass()">&times;</a> 
+                    <a href="#home" class="list-item" onclick="removeShowClass()">Home</a>
+                    <a href="#about" class="list-item" onclick="removeShowClass()">About</a>
+                    <a href="#work" class="list-item" onclick="removeShowClass()">Work</a>
+                    <a href="#contact" class="list-item" onclick="removeShowClass()">Contact</a>
+                </div>
+
+                <div class="row">
+                    <div class="columns small-2 menu">
+                        <div class="menu-icon" id="menu" onclick="addShowClass()"></div>
+                    </div>
+
+                    <div class="columns small-8"> 
+                        <ul class="nav__list" id="myNavList">
+                            <li class="nav__list-items">
+                                <a href="#home" class="nav__list-item">Home</a>
+                            </li>
+                            <li class="nav__list-items">
+                                <a href="#about" class="nav__list-item">About</a>
+                            </li>
+                            <li class="nav__list-items">
+                                <a href="#work" class="nav__list-item">Work</a>
+                            </li>
+                            <li class="nav__list-items">
+                                <a href="#contact" class="nav__list-item">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="columns small-3 small-offset-6 large-1 large-offset-3">
+                        <a href="index.html">
+                            <img src="./assets/img/girl-icon.png" alt="logo icon" class="logo">
+                        </a>
+                    </div>
+                </div> 
+            </nav> -->
+
+
+            <nav class="nav nav--mobile">
+
+            <div class="row">
+                <div class="columns small-2 menu">
+                    <div class="menu-icon" id="menu" onclick="addShowClass()"></div>
+                </div>
+
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="removeShowClass()">&times;</a> 
+                    <a href="#home" class="list-item" onclick="removeShowClass()">Home</a>
+                    <a href="#about" class="list-item" onclick="removeShowClass()">About</a>
+                    <a href="#work" class="list-item" onclick="removeShowClass()">Work</a>
+                    <a href="#contact" class="list-item" onclick="removeShowClass()">Contact</a>
+                </div>
+
+                <div class="columns small-3 small-offset-6 large-1 large-offset-3">
+                    <a href="index.html">
+                        <img src="./assets/img/girl-icon.png" alt="logo icon" class="logo">
+                    </a>
+                </div>
+            </div> 
             </nav>
-            <div class="row greeting">
-                <div class="columns small-8 small-offset-2 greeting_content">
-                    <h1 class="greeting_content-title" id="headingTest">
-                        <span class="greeting_content-title-one">Hi, </span>
-                        <span class="greeting_content-title-two">I'm Lesly Perez</span>
-                    </h1>
-                    <p class="greeting_content-text">A Front-end Web Developer with a passion for coding and learning.
+            
+
+            <nav class="nav top-nav">
+                <div class="columns small-8"> 
+                    <ul class="nav__list" id="myNavList">
+                        <li class="nav__list-items">
+                            <a href="#home" class="nav__list-item">Home</a>
+                        </li>
+                        <li class="nav__list-items">
+                            <a href="#about" class="nav__list-item">About</a>
+                        </li>
+                        <li class="nav__list-items">
+                            <a href="#work" class="nav__list-item">Work</a>
+                        </li>
+                        <li class="nav__list-items">
+                            <a href="#contact" class="nav__list-item">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="row eavesdrop greeting" id="home">
+                <div class="columns small-8 small-offset-2 greeting__content">
+                    <h1 class="greeting__content-title">Hi, <span>I'm Lesly Perez</span></h1>
+                    <p class="greeting__content-text">A Front-end Web Developer with a passion for <span class="special-text">coding</span> and <span class="special-text">learning</span>.
                     I also enjoy creating art and photography.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="columns small-4 small-offset-2 arrow-container">
-                    <a href="#about" class="arrow">
-                        <!-- <div class="arrow"></div> -->
-                    </a>
+                <div class="columns small-4 small-offset-4 large-2 large-offset-5">
+                    <a href="#about" class="arrow-container" id="arrow"></a>
                 </div>
             </div>
         </header>
 
-        <section class="" id="about">
+        <section class="eavesdrop section section--about" id="about">
             <div class="row ">
-                <div class="columns ">
-                    <h1 class="">
+                <div class="columns">
+                    <h2 class="">
                         about
-                    </h1>
+                    </h2>
                 </div>
             </div>
         </section>
 
-        <section class="" id="work">
+        <section class="eavesdrop section section--work" id="work">
             <div class="row ">
-                <div class="columns ">
-                    <h1 class="">
+                <div class="columns">
+                    <h2 class="">
                         work
-                    </h1>
+                    </h2>
                 </div>
             </div>
         </section>
 
-        <section class="" id="contact">
+        <section class="eavesdrop section section--contact" id="contact">
             <div class="row ">
-                <div class="columns ">
-                    <h1 class="">
+                <div class="columns">
+                    <h2 class="">
                         contact
-                    </h1>
+                    </h2>
                 </div>
             </div>
         </section>
 
+        <footer class="footer">
+            <div class="row">
+                <div class="columns small-8 large-6">
+                    <p class="footer-copy">Lesly Perez &copy; 2018</p>
+                    <small>
+                        Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                    </small>
+                </div>
+                <div class="columns small-2 small-offset-2 large-1 large-offset-5">
+                    <div class="footer-icons">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="./assets/img/instagram-draw-logo.png" alt="instagram logo">
+                        </a>
+                        <a href="https://www.linkendin.com/" target="_blank">
+                            <img src="./assets/img/linkedin-draw-logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>  <!-- .row -->
+
+            <div class="row">
+                <div class="columns">
+                    <a href="#top" >
+                        <img src="./assets/img/instagram-draw-logo.png" alt="instagram logo">
+                    </a>
+                </div>
+            </div>            
+        </footer>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
         <script type="text/javascript" src="./assets/js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         
         <!-- Compressed JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/js/foundation.min.js" integrity="sha256-G6jsRyH1fxbsvFIXSCuwYmI1aIDYBa28xscrvmYjJy0= sha384-vtoG68NvPc9azmFJr447vvY8qgdyA4FdaJ5/bqvzIM4eAdZfO0iyRRF8l2AAscYI sha512-43seCcNrHA0BQgrtyajB9sp8yOdv5c8QdYvgjP7zJ7v+dmzAcxYDQ2gupb9aztsNWBq1COIp/3NHYkQs4l/dkg==" crossorigin="anonymous"></script>
- 
-        </body>
+
+        <!-- EAVESDROP JQUERY -->
+        <script src="./assets/js/jquery.eavesdrop.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $('.top-nav').eavesdrop();
+            });
+        </script>
+    </body>
 </html>
